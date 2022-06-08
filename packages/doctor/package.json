@@ -37,7 +37,9 @@
     "build"
   ],
   "scripts": {
-    "build": "babel lib --root-mode=upward --out-dir=build/lib",
+    "build:lib": "babel lib --root-mode=upward --out-dir=build/lib",
+    "build:bin": "babel bin --root-mode=upward --out-dir=build/bin",
+    "build": "run-s build:*",
     "dev": "npm run build -- --watch",
     "fix": "npm run lint -- --fix",
     "lint": "eslint -c ../../.eslintrc --ignore-path ../../.eslintignore .",
