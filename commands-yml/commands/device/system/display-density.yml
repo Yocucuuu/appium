@@ -5,7 +5,7 @@ short_description: Retrieve display density(dpi) of the Android device
 example_usage:
   java:
     |
-      driver.getDeviceDensity();
+      driver.getDisplayDensity();
   python:
     |
       self.driver.get_display_density()
