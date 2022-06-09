@@ -9,8 +9,8 @@ description:
 example_usage:
   java:
     |
-      driver.terminateApp('com.apple.Preferences');
-      driver.terminateApp('io.appium.android.apis');
+      driver.terminateApp("com.apple.Preferences");
+      driver.terminateApp("io.appium.android.apis");
   python:
     |
       driver.terminate_app('com.apple.Preferences')
